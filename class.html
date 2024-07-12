@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Transaction</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional CSS for styling -->
+</head>
+<body>
+  <h1>Bank Transaction</h1>
+ 
+  <label for="deposit">Deposit</label>
+  <input id="deposit" type="number" placeholder="Enter deposit amount">
+ 
+  <label for="withdraw">Withdraw</label>
+  <input id="withdraw" type="number" placeholder="Enter withdraw amount">
+ 
+  <button onclick="processTransaction()">Process</button>
+ 
+  <p id="result">Current Balance: Rs 0.00</p> <!-- Initial balance display -->
+
+  <!-- Transaction Table -->
+   
+  <table id="transactionTable" style="width:25%">
+    <thead>
+      <tr>
+        <th>Transaction Type</th>
+        <th>Amount Rs</th>
+        <th>Balance After Transaction Rs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be added here dynamically -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>
